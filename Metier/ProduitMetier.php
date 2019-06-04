@@ -1,10 +1,10 @@
 <?php
 foreach (glob("Dao/*.php") as $filename)
 {
-    include $filename;
+    include_once $filename;
 }
-require 'C:\wamp64\www\manage_stock\Dao\ProduitDao.php';
-require 'C:\wamp64\www\manage_stock\Entities\Produit.php';
+include_once 'C:\wamp64\www\manage_stock\Dao\ProduitDao.php';
+include_once 'C:\wamp64\www\manage_stock\Entities\Produit.php';
 
 class ProduitMetier
 {
@@ -64,6 +64,7 @@ class ProduitMetier
 
 
 }
+/*
 $prod1 = new Produit(43);
 $prod2 = new Produit(1232 ,ésdf, 2342,KSDFH);
 
@@ -72,3 +73,4 @@ $prodmet = new ProduitMetier();
 $prodmet->add_product($prod1);
 //etumet->suppimer_Produit('123');
 
+*/

@@ -1,7 +1,7 @@
 <?php
 foreach (glob("Dao/*.php") as $filename)
 {
-    include $filename;
+    include_once $filename;
 }
 
 class Login implements JsonSerializable
@@ -22,9 +22,11 @@ class Login implements JsonSerializable
      * @param $username
      * @param $password
      */
-    public function __construct( $username,$password,$first_name='',$last_name='', $e_mail='',$type='user' )//same as setALL() FUNCTION
+    public function __construct( $username='',$password='',$first_name='',$last_name='', $e_mail='',$type='user' )//same as setALL() FUNCTION
     {
+        if (!$username=='')
         $this->username = $username;
+        if (!$password=='')
         $this->password = $password;
         if (!$first_name=='')
         $this->first_name = $first_name;
@@ -35,7 +37,7 @@ class Login implements JsonSerializable
         if (!$type=='user')
         $this->type = $type;
     }
-
+/*
     public function setAll($username,$password,$first_name,$last_name, $e_mail,$type)
     {
         $this->username = $username;
@@ -45,7 +47,7 @@ class Login implements JsonSerializable
         $this->e_mail = $e_mail;
         $this->type = $type;
     }
-
+*/
     /**
      * @return mixed
      */

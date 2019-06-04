@@ -6,7 +6,7 @@ foreach (glob("Dao/*.php") as $filename)
 include_once 'C:\wamp64\www\manage_stock\Dao\LoginDao.php';
 include_once 'C:\wamp64\www\manage_stock\Entities\Login.php';
 
-class LoginMetier
+class CommandeMetier
 {
 
     /**

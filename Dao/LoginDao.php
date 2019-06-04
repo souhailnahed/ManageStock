@@ -3,7 +3,7 @@
 include_once ("ConnectionUtil.php");
 foreach (glob("Entities/*.php") as $filename)
 {
-    include $filename;
+    include_once $filename;
 }
 
 class LoginDao

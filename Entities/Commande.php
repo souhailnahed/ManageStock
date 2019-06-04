@@ -1,5 +1,5 @@
 <?php
-
+//id_commande date_c prix_c qte_c id_produit CIN
 
 class Commande
 {

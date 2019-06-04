@@ -1,10 +1,10 @@
 <?php
 foreach (glob("Dao/*.php") as $filename)
 {
-    include $filename;
+    include_once $filename;
 }
-require 'C:\wamp64\www\manage_stock\Dao\ClientDao.php';
-require 'C:\wamp64\www\manage_stock\Entities\Client.php';
+include_once 'C:\wamp64\www\manage_stock\Dao\ClientDao.php';
+include_once 'C:\wamp64\www\manage_stock\Entities\Client.php';
 
 class ClientMetier
 {
@@ -64,11 +64,13 @@ class ClientMetier
 
 
 }
-$etu1 = new Client('said','elaghmiri', '0612344331');
-$etud1 = new Client('&é"&é"&é"','isssis','093093');
+/*
+$cli1 = new Client('anaaaassqqsdqsd','elaghmiri', '0612344331');
+$cli2 = new Client('anaaaassqqsdqsd','isssis','093093');
 
-$etumet = new ClientMetier();
-//$etumet->modifier_Client($etu1);
-//$etumet->ajouter_client($etu1);
-$etumet->suppimer_Client('BJ1ss223');
+$climet = new ClientMetier();
+//$climet->modifier_Client($cli2);
+//$climet->ajouter_client($cli1);
+$climet->suppimer_Client('AZE');
 
+*/

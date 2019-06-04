@@ -8,6 +8,7 @@ class CommandeDao
     /**
      * CommandeDao constructor.
      */
+    //id_commande date_c prix_c qte_c id_produit CIN
     public function __construct()
     {
         $this->conn;

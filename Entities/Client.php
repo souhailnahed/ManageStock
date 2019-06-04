@@ -1,7 +1,7 @@
 <?php
 foreach (glob("Dao/*.php") as $filename)
 {
-    include $filename;
+    include_once $filename;
 }
 
 class Client implements JsonSerializable
