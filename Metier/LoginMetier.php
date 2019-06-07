@@ -3,8 +3,8 @@ foreach (glob("Dao/*.php") as $filename)
 {
     include_once $filename;
 }
-include_once 'C:\wamp64\www\manage_stock\Dao\LoginDao.php';
-include_once 'C:\wamp64\www\manage_stock\Entities\Login.php';
+require_once ("../Dao/LoginDao.php");
+require_once ("../Entities/Login.php");
 
 class LoginMetier
 {
